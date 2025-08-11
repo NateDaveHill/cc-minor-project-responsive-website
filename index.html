@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Grid Website Layout</title>
     <link rel="stylesheet" href="styling.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   </head>
   <body>
     <div class="container">
@@ -35,6 +38,7 @@
           </div>
           <div class="column">
             <img
+              id="first-image"
               src="./assets/image1.jpg"
               alt="two people collaborating on a computer" />
           </div>
@@ -43,26 +47,33 @@
         <h2>Our Core Features</h2>
         <div class="content-grid">
           <div class="card">
-            <h3>Responsive Design</h3>
+            <i class="material-icons">emoji_objects</i>
+
+            <h3>Smart Solutions</h3>
             <p>
-              The layout adapts to different screen sizes using CSS Grid's
-              powerful features.
+              AI-powered technology that adapts to your business needs and grows
+              with your success.
             </p>
           </div>
           <div class="card">
-            <h3>Named Areas</h3>
-            <p>Grid areas are named for better readability and maintenance.</p>
+            <i class="material-icons">bolt</i>
+            <h3>Lightning Fast</h3>
+            <p>
+              Optimized performance that delivers results in milliseconds, not
+              minutes.
+            </p>
           </div>
           <div class="card">
-            <h3>Flexible Sizing</h3>
+            <i class="material-icons">lock</i>
+            <h3>Secure & Reliable</h3>
             <p>
-              Columns and rows adjust automatically based on content and screen
-              size.
+              Enterprise-grade security with 99.9% uptime guarantee for peace of
+              mind.
             </p>
           </div>
         </div>
 
-        <h2>About CSS Grid</h2>
+        <h2>About TechVenture</h2>
 
         <div class="row">
           <div class="column">
@@ -74,6 +85,7 @@
           </div>
           <div class="column">
             <img
+              id="second-image"
               src="./assets/image2.jpg"
               alt="many people collaborating on a computer" />
           </div>
@@ -81,6 +93,8 @@
       </main>
 
       <footer class="footer">
+        <div class="logo">TechVenture</div>
+        <p>&copy; 2024 MyWebsite. All rights reserved.</p>
         <p>&copy; 2024 MyWebsite. All rights reserved.</p>
       </footer>
     </div>

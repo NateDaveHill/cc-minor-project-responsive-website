@@ -112,9 +112,7 @@
 
   .card {
     background-color: #f8f9fa;
-    padding: 1.5rem;
-    border-radius: 8px;
-    border-left: 4px solid #3498db;
+    padding: 50px;
   }
 
   .aside {
@@ -144,7 +142,12 @@
     align-items: center;
     justify-content: center;
     padding: 0 2rem;
-  }
+    column-count: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
 
   /* Responsive Design */
   @media (max-width: 768px) {
@@ -166,4 +169,12 @@
   .column {
     float: left;
     width: 50%;
+  }
+
+  #first-image {
+    width: 350px;
+  }
+
+  #second-image {
+    width: 300px;
   }
