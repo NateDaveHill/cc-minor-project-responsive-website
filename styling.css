@@ -87,7 +87,8 @@
     grid-area: main;
     background-color: white;
     padding: 2rem;
-    margin: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 
   .main h1 {
@@ -115,6 +116,8 @@
   .card {
     background-color: #f8f9fa;
     padding: 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   }
 
   .aside {
@@ -181,6 +184,29 @@
     color: #3498db;
   }
 
+  .btn-start {
+    padding: 10px;
+    border-radius: 5px;
+    background-color:  #9966ff;
+    border: none;
+    color: white;
+}
+
+.btn-more {
+    padding: 10px;
+    border-radius: 5px;
+    background-color:  white;
+    border: 1px solid #9966ff;
+    color: #9966ff;
+}
+
+#features {
+    text-align: center;
+}
+
+#about {
+    text-align: center;
+}
 
   /* Responsive Design */
   @media (max-width: 768px) {
@@ -203,6 +229,10 @@
     float: left;
     width: 50%;
   }
+
+  .images {
+    border-radius: 5px;
+}
 
   #first-image {
     width: 350px;
