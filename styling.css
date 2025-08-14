@@ -89,6 +89,7 @@
     padding: 2rem;
     margin-top: 50px;
     margin-bottom: 50px;
+    ;
   }
 
   .main h1 {
@@ -200,8 +201,18 @@
     color: #9966ff;
 }
 
+.flex-stats {
+    display: flex;
+    gap: 32px;
+}
+
+.flex-stats h1 {
+    color: blue;
+}
+
 #features {
     text-align: center;
+    background-color: lightblue;
 }
 
 #about {
@@ -213,11 +224,9 @@
     .container {
       grid-template-columns: 1fr;
       grid-template-areas:
-        "header"
-        "main"
-        "sidebar"
-        "aside"
-        "footer";
+        "header header header"
+        "main main main"
+        "footer footer footer";
     }
 
     .nav-menu {
