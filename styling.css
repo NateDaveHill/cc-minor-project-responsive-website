@@ -11,14 +11,13 @@
 
   .container {
     display: grid;
-    grid-template-columns: 250px 1fr 200px;
-    grid-template-rows: 80px 1fr 60px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 1fr auto;
     grid-template-areas:
-      "header header header"
-      "sidebar main aside"
-      "footer footer footer";
+      "header"
+      "main"
+      "footer";
     min-height: 100vh;
-    gap: 1px;
   }
 
   .header {
@@ -85,11 +84,9 @@
 
   .main {
     grid-area: main;
-    background-color: white;
     padding: 2rem;
     margin-top: 50px;
     margin-bottom: 50px;
-    ;
   }
 
   .main h1 {
@@ -210,12 +207,24 @@
     color: blue;
 }
 
+article {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding: 2rem;
+}
+
+#home {
+    text-align: center;
+    background-color: white;
+}
+
 #features {
     text-align: center;
-    background-color: lightblue;
+    background-color: #f8f8f8 ;
 }
 
 #about {
+    background-color: white;
     text-align: center;
 }
 
@@ -234,10 +243,18 @@
     }
   }
 
-  .column {
+  .row {
+    display: flex;
+    justify-content: center; 
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+.column {
     float: left;
     width: 50%;
-  }
+    text-align: left;
+}
 
   .images {
     border-radius: 5px;
@@ -250,3 +267,14 @@
   #second-image {
     width: 300px;
   }
+
+  .btn-flex {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.btn-start:hover, .btn-more:hover {
+    transform: translateY(-2px);
+    transition: transform 0.3s ease;
+}
